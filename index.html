@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Responsive Web Developer Starter - devchallenges.io</title>
+    <title>Responsive Web Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       href="images/favicon.ico"
@@ -14,17 +20,79 @@
   </head>
   <body>
     <header>
-      <div class="get-started">Get started by editting <b>index.html</b></div>
-      <img class="logo" src="images/logo.svg" alt="Main Logo" />
+      <img
+        src="../responsive-web-starter/images/contact-form-icon.svg"
+        alt="logo"
+        class="logo"
+      />
     </header>
 
     <main>
-      <img src="images/devchallenges-logo.svg" alt="A beautiful landscape" />
-      <h3 class="title">Responsive Web Developer Starter</h3>
+      <h1>Interested in our business pricing?</h1>
+      <h2>
+        Fill out the form to view details and we’ll contact you as soon as
+        possible.
+      </h2>
+
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="group">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                required
+                placeholder="Ethan Johnson"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Company Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                required
+                placeholder="ethan@johnson.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="size" class="form-label">Company Size</label>
+              <select name="size" id="size" class="form-select">
+                <option value="small">2-5 employees</option>
+                <option value="medium">6-10 employees</option>
+                <option value="large">11-50 employees</option>
+                <option value="enterprise" selected>50-100 employees</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <select name="subject" id="subject" class="form-select">
+                <option value="general-inquiry" selected>
+                  Building Landing pages
+                </option>
+                <option value="custom-design">Custom website design</option>
+                <option value="business-development">
+                  Business development opportunities
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group message">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" class="form-textarea" required>
+                50-100 employees
+                </textarea
+            >
+          </div>
+        </form>
+        <input type="submit" class="form-submit" value="Contact Sales" />
+      </div>
     </main>
-
-    <footer></footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
